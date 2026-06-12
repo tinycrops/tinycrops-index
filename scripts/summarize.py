@@ -18,7 +18,7 @@ import httpx
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 ORG = "tinycrops"
-MODEL = "gpt-5.4-mini"
+MODEL = "gpt-4.1-mini"
 OUT_PATH = Path(__file__).parent.parent / "frontend" / "index.html"
 
 SKIP_REPOS = {"tinycrops-index"}  # don't index ourselves
@@ -164,7 +164,11 @@ def main():
         if not text:
             print(f"    skipped (no content)", file=sys.stderr)
             continue
-        summary = summarize(name, pages_url, text)
+        try:
+            summary = summarize(name, pages_url, text)
+        except Exception as e:
+            print(f"    summarize failed: {e}", file=sys.stderr)
+            summary = "Summary unavailable."
         sites.append({"name": name, "url": pages_url, "summary": summary})
         print(f"    summarized", file=sys.stderr)
 
