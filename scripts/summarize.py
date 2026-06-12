@@ -31,7 +31,7 @@ def gh_list_repos():
     page = 1
     while True:
         r = httpx.get(
-            f"https://api.github.com/orgs/{ORG}/repos",
+            f"https://api.github.com/users/{ORG}/repos",
             params={"type": "public", "per_page": 100, "page": page},
             headers=GH_HEADERS,
             timeout=20,
