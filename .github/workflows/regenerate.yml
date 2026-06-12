@@ -1,0 +1,69 @@
+name: Regenerate index
+
+on:
+  # Nightly so new sites are caught within 24h
+  schedule:
+    - cron: "0 6 * * *"
+  # Any other tinycrops site can trigger this by calling:
+  #   gh api repos/tinycrops/tinycrops-index/dispatches \
+  #     -f event_type=site-published -f client_payload[repo]=<repo-name>
+  repository_dispatch:
+    types: [site-published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install httpx==0.28.1
+
+      - name: Run summarizer
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/summarize.py
+
+      - name: Commit updated index
+        run: |
+          git config user.name "tinycrops-bot"
+          git config user.email "noreply@tinycrops.github.io"
+          git add frontend/index.html
+          git diff --cached --quiet && echo "no changes" || git commit -m "chore: regenerate index $(date -u +%Y-%m-%d)"
+          git push
+
+  deploy:
+    needs: regenerate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend
+      - id: deployment
+        uses: actions/deploy-pages@v4
