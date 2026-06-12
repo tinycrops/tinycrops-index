@@ -18,7 +18,7 @@ import httpx
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 ORG = "tinycrops"
-MODEL = "gpt-4.1-mini"
+MODEL = "gpt-5.4-mini"
 OUT_PATH = Path(__file__).parent.parent / "frontend" / "index.html"
 
 SKIP_REPOS = {"tinycrops-index"}  # don't index ourselves
@@ -86,10 +86,11 @@ def summarize(title, url, text):
         json={
             "model": MODEL,
             "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 200,
-            "temperature": 0.3,
+            # gpt-5 family: use max_completion_tokens, reject custom temperature.
+            # Budget covers internal reasoning tokens + the visible summary.
+            "max_completion_tokens": 2000,
         },
-        timeout=30,
+        timeout=60,
     )
     r.raise_for_status()
     return r.json()["choices"][0]["message"]["content"].strip()
