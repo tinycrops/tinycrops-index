@@ -1,13 +1,26 @@
 {
   "profile": {
-    "name": "tinycrops",
-    "tagline": "self-directed research on machines that model themselves — and can show it to someone else",
-    "blurb": "Two years of unpaid, self-directed work on one question, run on a five-machine cluster of secondhand hardware. Local model serving, embedding stores, ASR and voice, and measured experiments — including the ones that failed. Everything below is public and reproducible.",
+    "name": "Matthew Hendricks",
+    "tagline": "tinycrops — self-directed research on machines that model themselves, and can show it to someone else",
+    "blurb": "Independent research run on a five-machine cluster of secondhand hardware: local model serving, embedding stores, brain-response modelling, ASR and voice. Everything below is public and reproducible, including the experiments that failed.",
     "links": [
+      {"label": "book a session", "url": "https://tinycrops.github.io/topics-you-can-hire-me-to-teach/"},
       {"label": "github.com/tinycrops", "url": "https://github.com/tinycrops"}
     ]
   },
   "selected": [
+    {
+      "repo": "cybersecrets-brain-report",
+      "title": "Why viewers stay — brain-response retention report",
+      "tag": "client work",
+      "note": "Ran 99 of a creator's TikToks through Meta FAIR's TRIBE v2, a model trained on fMRI paired with video that predicts second-by-second cortical activation, then compared its predictions against that account's real audience-retention curves. A neuroscience encoding model used as a practical tool for a working creator."
+    },
+    {
+      "repo": "tribe-gallery",
+      "title": "TRIBE v2 Brain Response Gallery",
+      "tag": "interactive",
+      "note": "Predicts fMRI cortical activation for the opening 15 seconds of a video across 20,484 fsaverage5 vertices, stacking V-JEPA2 for vision, Wav2Vec-BERT for audio and LLaMA 3.2 for speech, then reads the result out over the 76 named Destrieux regions as a browsable heatmap."
+    },
     {
       "repo": "awakened-poe-trade",
       "title": "Mercenary Warrant price-check — upstream feature",
@@ -17,16 +30,42 @@
       "language": "TypeScript"
     },
     {
+      "repo": "personality-compressor",
+      "title": "How many bits is a person?",
+      "tag": "research",
+      "note": "Tests whether personality is a small, low-dimensional handle across six independent datasets — 22,940+ users in KuaiRand, 1,200 blog authors, 167 nations in FAOSTAT, plus World Bank, Hofstede and food embeddings. Lands on roughly 4 to 16 bits, about two dimensions, and argues it must be carried because more compute cannot re-derive it."
+    },
+    {
+      "repo": "gemini-manifold-book",
+      "title": "The Gemini Manifold Book",
+      "tag": "research",
+      "note": "A public measurement book for multimodal embeddings, one chapter per experiment, embeddings stored so results can be checked. The driving question: does a model read an ASCII cathedral as text, as image, or as something that bridges both?"
+    },
+    {
       "repo": "ascii-realness-story",
       "title": "The Realness Ladder",
       "tag": "research",
-      "note": "Measured whether ASCII art, rasterized and passed through img2img, moves monotonically toward photographic 'realness' in a shared embedding space. It does, across a nine-subject corpus, and identity survives the whole ladder."
+      "note": "Measures whether ASCII art, rasterized and pushed through an img2img bridge, moves monotonically toward photographic realness in a shared embedding space. It does, across a nine-subject corpus, and subject identity survives the whole ladder."
+    },
+    {
+      "repo": "recursive-screen-ngpt",
+      "title": "A model that draws computers on computers",
+      "tag": "trained from scratch",
+      "note": "An 11.9M-parameter character-level nGPT trained on 9.2M tokens, primed with nothing but a start token and left to emit one character at a time until it decides to stop — testing whether self-similar training teaches image-like text generation."
     },
     {
       "repo": "geometry-as-judge",
       "title": "Geometry as Judge",
       "tag": "research",
-      "note": "Asks whether the geometry of an embedding space can stand in for a human rater. Includes the negative results — where the geometry disagrees with people, and why that matters more than where it agrees."
+      "note": "Asks whether the geometry of an embedding space can stand in for a human rater. Keeps the negative results in view — where the geometry disagrees with people, and why that matters more than where it agrees."
+    },
+    {
+      "repo": "arc-jgs2",
+      "title": "ARC orientation workbench",
+      "url": "https://github.com/tinycrops/arc-jgs2",
+      "tag": "research",
+      "note": "A corpus-level workbench for ARC-AGI built on one primitive — nuisance, group action, harmonic invariants. Retrieval accuracy moved from 28% to 46% under that framing.",
+      "language": "Python"
     },
     {
       "repo": "okf-commons",
@@ -35,17 +74,16 @@
       "note": "Turns years of saved browser tabs into a queryable knowledge base with bidirectional provenance, so every claim traces back to the source that produced it."
     },
     {
-      "repo": "arc-jgs2",
-      "title": "ARC orientation workbench",
-      "url": "https://github.com/tinycrops/arc-jgs2",
-      "tag": "research",
-      "note": "A corpus-level workbench for ARC-AGI built on one primitive — nuisance, group action, harmonic invariants. Retrieval accuracy went from 28% to 46% under that framing."
+      "repo": "articulate",
+      "title": "articulate — get the computer out of the way",
+      "tag": "product",
+      "note": "Turns a recorded thought into a finished captioned vertical essay, assembling narration, captions, slides and cuts from speech alone. Built for the case where the idea was never the hard part — the editing was."
     },
     {
-      "repo": "topics-you-can-hire-me-to-teach",
-      "title": "Topics you can hire me to teach",
-      "tag": "available",
-      "note": "What I can be hired to explain, and to whom."
+      "repo": "fish-farm-discovery-road",
+      "title": "Land siting by constraint scoring",
+      "tag": "geospatial",
+      "note": "Scored and shortlisted 26 land candidates across 8 Western New York counties on water distance, road distance, slope, floodplain and wetland balance. Included as evidence the same method transfers outside machine learning."
     }
   ]
 }
