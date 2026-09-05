@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>tinycrops — published work</title>
-<meta name="description" content="Two years of unpaid, self-directed work on one question, run on a five-machine cluster of secondhand hardware. Local model serving, embedding stores, ASR and voice, and measured experiments — including the ones that failed. Everything below is public and reproducible.">
-<meta name="author" content="tinycrops">
+<title>Matthew Hendricks — published work</title>
+<meta name="description" content="Independent research run on a five-machine cluster of secondhand hardware: local model serving, embedding stores, brain-response modelling, ASR and voice. Everything below is public and reproducible, including the experiments that failed.">
+<meta name="author" content="Matthew Hendricks">
 <meta property="og:type" content="website">
-<meta property="og:title" content="tinycrops — published work">
-<meta property="og:description" content="Two years of unpaid, self-directed work on one question, run on a five-machine cluster of secondhand hardware. Local model serving, embedding stores, ASR and voice, and measured experiments — including the ones that failed. Everything below is public and reproducible.">
+<meta property="og:title" content="Matthew Hendricks — published work">
+<meta property="og:description" content="Independent research run on a five-machine cluster of secondhand hardware: local model serving, embedding stores, brain-response modelling, ASR and voice. Everything below is public and reproducible, including the experiments that failed.">
 <meta property="og:url" content="https://tinycrops.github.io/tinycrops-index/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="tinycrops — published work">
-<meta name="twitter:description" content="Two years of unpaid, self-directed work on one question, run on a five-machine cluster of secondhand hardware. Local model serving, embedding stores, ASR and voice, and measured experiments — including the ones that failed. Everything below is public and reproducible.">
+<meta name="twitter:title" content="Matthew Hendricks — published work">
+<meta name="twitter:description" content="Independent research run on a five-machine cluster of secondhand hardware: local model serving, embedding stores, brain-response modelling, ASR and voice. Everything below is public and reproducible, including the experiments that failed.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127793;</text></svg>">
 <style>
   :root{
@@ -61,12 +61,24 @@
 <body>
 <div class="wrap">
 <header>
-  <p class="kicker">self-directed research on machines that model themselves — and can show it to someone else</p>
-  <h1>tinycrops</h1>
-  <p class="blurb">Two years of unpaid, self-directed work on one question, run on a five-machine cluster of secondhand hardware. Local model serving, embedding stores, ASR and voice, and measured experiments — including the ones that failed. Everything below is public and reproducible.</p>
-  <div class="links"><a href="https://github.com/tinycrops" target="_blank" rel="noopener noreferrer">github.com/tinycrops</a></div>
+  <p class="kicker">tinycrops — self-directed research on machines that model themselves, and can show it to someone else</p>
+  <h1>Matthew Hendricks</h1>
+  <p class="blurb">Independent research run on a five-machine cluster of secondhand hardware: local model serving, embedding stores, brain-response modelling, ASR and voice. Everything below is public and reproducible, including the experiments that failed.</p>
+  <div class="links"><a href="https://tinycrops.github.io/topics-you-can-hire-me-to-teach/" target="_blank" rel="noopener noreferrer">book a session</a><a href="https://github.com/tinycrops" target="_blank" rel="noopener noreferrer">github.com/tinycrops</a></div>
 </header>
 <h2 class="sec">Selected work</h2><div class="grid">
+    <article class="card feat">
+      <h3><a href="https://tinycrops.github.io/cybersecrets-brain-report/" target="_blank" rel="noopener noreferrer">Why viewers stay — brain-response retention report</a></h3>
+      <p>Ran 99 of a creator&#x27;s TikToks through Meta FAIR&#x27;s TRIBE v2, a model trained on fMRI paired with video that predicts second-by-second cortical activation, then compared its predictions against that account&#x27;s real audience-retention curves. A neuroscience encoding model used as a practical tool for a working creator.</p>
+      <div class="meta"><span>updated 2026-06-10</span><span>HTML</span><span class="tag">client work</span></div>
+      <a class="src" href="https://tinycrops.github.io/cybersecrets-brain-report/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/cybersecrets-brain-report/</a>
+    </article>
+    <article class="card feat">
+      <h3><a href="https://tinycrops.github.io/tribe-gallery/" target="_blank" rel="noopener noreferrer">TRIBE v2 Brain Response Gallery</a></h3>
+      <p>Predicts fMRI cortical activation for the opening 15 seconds of a video across 20,484 fsaverage5 vertices, stacking V-JEPA2 for vision, Wav2Vec-BERT for audio and LLaMA 3.2 for speech, then reads the result out over the 76 named Destrieux regions as a browsable heatmap.</p>
+      <div class="meta"><span>updated 2026-06-10</span><span>HTML</span><span class="tag">interactive</span></div>
+      <a class="src" href="https://tinycrops.github.io/tribe-gallery/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/tribe-gallery/</a>
+    </article>
     <article class="card feat">
       <h3><a href="https://github.com/tinycrops/awakened-poe-trade" target="_blank" rel="noopener noreferrer">Mercenary Warrant price-check — upstream feature</a></h3>
       <p>Built a price-check path for a new item class in a trading tool with a large user base, ported from an upstream issue and verified end to end against live trade data.</p>
@@ -74,16 +86,40 @@
       <a class="src" href="https://github.com/tinycrops/awakened-poe-trade" target="_blank" rel="noopener noreferrer">github.com/tinycrops/awakened-poe-trade</a>
     </article>
     <article class="card feat">
+      <h3><a href="https://tinycrops.github.io/personality-compressor/" target="_blank" rel="noopener noreferrer">How many bits is a person?</a></h3>
+      <p>Tests whether personality is a small, low-dimensional handle across six independent datasets — 22,940+ users in KuaiRand, 1,200 blog authors, 167 nations in FAOSTAT, plus World Bank, Hofstede and food embeddings. Lands on roughly 4 to 16 bits, about two dimensions, and argues it must be carried because more compute cannot re-derive it.</p>
+      <div class="meta"><span>updated 2026-06-12</span><span>HTML</span><span class="tag">research</span></div>
+      <a class="src" href="https://tinycrops.github.io/personality-compressor/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/personality-compressor/</a>
+    </article>
+    <article class="card feat">
+      <h3><a href="https://tinycrops.github.io/gemini-manifold-book/" target="_blank" rel="noopener noreferrer">The Gemini Manifold Book</a></h3>
+      <p>A public measurement book for multimodal embeddings, one chapter per experiment, embeddings stored so results can be checked. The driving question: does a model read an ASCII cathedral as text, as image, or as something that bridges both?</p>
+      <div class="meta"><span>updated 2026-03-18</span><span>HTML</span><span class="tag">research</span></div>
+      <a class="src" href="https://tinycrops.github.io/gemini-manifold-book/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/gemini-manifold-book/</a>
+    </article>
+    <article class="card feat">
       <h3><a href="https://tinycrops.github.io/ascii-realness-story/" target="_blank" rel="noopener noreferrer">The Realness Ladder</a></h3>
-      <p>Measured whether ASCII art, rasterized and passed through img2img, moves monotonically toward photographic &#x27;realness&#x27; in a shared embedding space. It does, across a nine-subject corpus, and identity survives the whole ladder.</p>
+      <p>Measures whether ASCII art, rasterized and pushed through an img2img bridge, moves monotonically toward photographic realness in a shared embedding space. It does, across a nine-subject corpus, and subject identity survives the whole ladder.</p>
       <div class="meta"><span>updated 2026-06-22</span><span>HTML</span><span class="tag">research</span></div>
       <a class="src" href="https://tinycrops.github.io/ascii-realness-story/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/ascii-realness-story/</a>
     </article>
     <article class="card feat">
+      <h3><a href="https://tinycrops.github.io/recursive-screen-ngpt/" target="_blank" rel="noopener noreferrer">A model that draws computers on computers</a></h3>
+      <p>An 11.9M-parameter character-level nGPT trained on 9.2M tokens, primed with nothing but a start token and left to emit one character at a time until it decides to stop — testing whether self-similar training teaches image-like text generation.</p>
+      <div class="meta"><span>updated 2026-06-21</span><span>HTML</span><span class="tag">trained from scratch</span></div>
+      <a class="src" href="https://tinycrops.github.io/recursive-screen-ngpt/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/recursive-screen-ngpt/</a>
+    </article>
+    <article class="card feat">
       <h3><a href="https://tinycrops.github.io/geometry-as-judge/" target="_blank" rel="noopener noreferrer">Geometry as Judge</a></h3>
-      <p>Asks whether the geometry of an embedding space can stand in for a human rater. Includes the negative results — where the geometry disagrees with people, and why that matters more than where it agrees.</p>
+      <p>Asks whether the geometry of an embedding space can stand in for a human rater. Keeps the negative results in view — where the geometry disagrees with people, and why that matters more than where it agrees.</p>
       <div class="meta"><span>updated 2026-03-20</span><span>HTML</span><span class="tag">research</span></div>
       <a class="src" href="https://tinycrops.github.io/geometry-as-judge/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/geometry-as-judge/</a>
+    </article>
+    <article class="card feat">
+      <h3><a href="https://github.com/tinycrops/arc-jgs2" target="_blank" rel="noopener noreferrer">ARC orientation workbench</a></h3>
+      <p>A corpus-level workbench for ARC-AGI built on one primitive — nuisance, group action, harmonic invariants. Retrieval accuracy moved from 28% to 46% under that framing.</p>
+      <div class="meta"><span>Python</span><span class="tag">research</span></div>
+      <a class="src" href="https://github.com/tinycrops/arc-jgs2" target="_blank" rel="noopener noreferrer">github.com/tinycrops/arc-jgs2</a>
     </article>
     <article class="card feat">
       <h3><a href="https://tinycrops.github.io/okf-commons/" target="_blank" rel="noopener noreferrer">OKF Commons — compressed research memory</a></h3>
@@ -92,190 +128,154 @@
       <a class="src" href="https://tinycrops.github.io/okf-commons/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/okf-commons/</a>
     </article>
     <article class="card feat">
-      <h3><a href="https://github.com/tinycrops/arc-jgs2" target="_blank" rel="noopener noreferrer">ARC orientation workbench</a></h3>
-      <p>A corpus-level workbench for ARC-AGI built on one primitive — nuisance, group action, harmonic invariants. Retrieval accuracy went from 28% to 46% under that framing.</p>
-      <div class="meta"><span class="tag">research</span></div>
-      <a class="src" href="https://github.com/tinycrops/arc-jgs2" target="_blank" rel="noopener noreferrer">github.com/tinycrops/arc-jgs2</a>
+      <h3><a href="https://tinycrops.github.io/articulate/" target="_blank" rel="noopener noreferrer">articulate — get the computer out of the way</a></h3>
+      <p>Turns a recorded thought into a finished captioned vertical essay, assembling narration, captions, slides and cuts from speech alone. Built for the case where the idea was never the hard part — the editing was.</p>
+      <div class="meta"><span>updated 2026-06-12</span><span>HTML</span><span class="tag">product</span></div>
+      <a class="src" href="https://tinycrops.github.io/articulate/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/articulate/</a>
     </article>
     <article class="card feat">
-      <h3><a href="https://tinycrops.github.io/topics-you-can-hire-me-to-teach/" target="_blank" rel="noopener noreferrer">Topics you can hire me to teach</a></h3>
-      <p>What I can be hired to explain, and to whom.</p>
-      <div class="meta"><span>updated 2026-06-13</span><span>CSS</span><span class="tag">available</span></div>
-      <a class="src" href="https://tinycrops.github.io/topics-you-can-hire-me-to-teach/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/topics-you-can-hire-me-to-teach/</a>
+      <h3><a href="https://tinycrops.github.io/fish-farm-discovery-road/" target="_blank" rel="noopener noreferrer">Land siting by constraint scoring</a></h3>
+      <p>Scored and shortlisted 26 land candidates across 8 Western New York counties on water distance, road distance, slope, floodplain and wetland balance. Included as evidence the same method transfers outside machine learning.</p>
+      <div class="meta"><span>updated 2026-03-09</span><span>HTML</span><span class="tag">geospatial</span></div>
+      <a class="src" href="https://tinycrops.github.io/fish-farm-discovery-road/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/fish-farm-discovery-road/</a>
     </article></div>
-<h2 class="sec">Everything else · 29 sites</h2>
+<h2 class="sec">Everything else · 23 sites</h2>
 <div class="grid">
     <article class="card">
       <h3><a href="https://tinycrops.github.io/ascii-bridge/" target="_blank" rel="noopener noreferrer">ascii-bridge</a></h3>
-      <p>A demo compared ASCII art produced from a subject name by four generators, then ran it through an image-to-image diffusion bridge and measured movement toward the real subject in gemini-embedding-2 space across a 9-subject, 4-generator ladder.</p>
+      <p>Built a slider-based demo that compares human-drawn ASCII, machine-authored ASCII from 4 generators across 9 subjects, and the image-to-image “bridge” using gemini-embedding-2 to measure movement toward real photos.</p>
       <div class="meta"><span>updated 2026-06-22</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/ascii-bridge/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/ascii-bridge/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/melting-computer-ngpt/" target="_blank" rel="noopener noreferrer">melting-computer-ngpt</a></h3>
-      <p>The project built and compared two character-level nGPTs for ASCII art: an 11.9M-parameter model trained on full 2,061-character computer images, and a 7M-parameter model trained on 180 screen-sized drawings.</p>
+      <p>Built and compared two small character-level nGPTs on a hand-drawn ASCII computer: one 11.9M-parameter model trained on 2,061-character full-artifact windows, and one 7M-parameter model trained on 180 screen-sized drawings.</p>
       <div class="meta"><span>updated 2026-06-21</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/melting-computer-ngpt/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/melting-computer-ngpt/</a>
     </article>
     <article class="card">
-      <h3><a href="https://tinycrops.github.io/recursive-screen-ngpt/" target="_blank" rel="noopener noreferrer">recursive-screen-ngpt</a></h3>
-      <p>A tiny 11.915M-parameter char-level nGPT was trained on 9.216M tokens to draw ASCII computers recursively inside computers, testing whether self-similar training better teaches image-like text generation.</p>
-      <div class="meta"><span>updated 2026-06-21</span><span>HTML</span></div>
-      <a class="src" href="https://tinycrops.github.io/recursive-screen-ngpt/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/recursive-screen-ngpt/</a>
-    </article>
-    <article class="card">
       <h3><a href="https://tinycrops.github.io/bilayer-machines/" target="_blank" rel="noopener noreferrer">bilayer-machines</a></h3>
-      <p>A small index page was built for bilayer machine artworks, showing nested multimedia stories over a hand-drawn ASCII cat-at-computer image. It presents 3 published pieces, each with 2 ASCII layers and a generative screen mask, illustrating how original art can be preserved while the monitor content changes.</p>
+      <p>A small index page was built for the bilayer-machines project, cataloging three published bilayer stories built from a real hand-drawn ASCII cat-at-computer scene with 2 ASCII layers.</p>
       <div class="meta"><span>updated 2026-06-21</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/bilayer-machines/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/bilayer-machines/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/bilayer-stories/" target="_blank" rel="noopener noreferrer">bilayer-stories</a></h3>
-      <p>The page indexes Bilayer Stories, a bilayer-multimedia/v1 collection of two-layer media entries combining a three-paragraph narrative layer with two ASCII-art masks. It lists 3 cat-themed pieces, each with 2 ASCII layers, showing a format for pairing generated prose with rendered visual art.</p>
+      <p>The page indexes Bilayer Stories, a collection of two-layer media pieces with a three-paragraph narrative layer and two ASCII-art mask layers, generated from bilayer-multimedia/v1 artifacts.</p>
       <div class="meta"><span>updated 2026-06-21</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/bilayer-stories/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/bilayer-stories/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/okf-tab-gallery/" target="_blank" rel="noopener noreferrer">okf-tab-gallery</a></h3>
-      <p>A compressed tab gallery was built to display published work in an index-style gallery, using a compact tab interface. It contains 7 pages, making it a small browsable collection that helps organize and access the material efficiently.</p>
+      <p>A compressed tab gallery was built to present an index of published work. The page shows 7 pages, giving a compact way to browse the collection.</p>
       <div class="meta"><span>updated 2026-06-17</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/okf-tab-gallery/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/okf-tab-gallery/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/tribev2-findings-pages/" target="_blank" rel="noopener noreferrer">tribev2-findings-pages</a></h3>
-      <p>The project built an in-silico neuroscience index of TRIBE v2, a tri-modal model, by feeding controlled speech, ASCII, image, audio, and text stimuli and reading out predicted fsaverage5 brain maps across 20,484 vertices.</p>
+      <p>The project built an in-silico neuroscience index that feeds controlled video, audio, and text into TRIBE v2 and reads out predicted fMRI maps on 20,484 fsaverage5 vertices.</p>
       <div class="meta"><span>updated 2026-06-16</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/tribev2-findings-pages/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/tribev2-findings-pages/</a>
     </article>
     <article class="card">
-      <h3><a href="https://tinycrops.github.io/personality-compressor/" target="_blank" rel="noopener noreferrer">personality-compressor</a></h3>
-      <p>The page presents a set of experiments and visualizations measuring a low-dimensional “personality” or taste manifold across people, blogs, chat, watch history, and food, using data from 1,200 authors, 22,940–26,878 users, and 167 nations.</p>
-      <div class="meta"><span>updated 2026-06-12</span><span>HTML</span></div>
-      <a class="src" href="https://tinycrops.github.io/personality-compressor/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/personality-compressor/</a>
+      <h3><a href="https://tinycrops.github.io/topics-you-can-hire-me-to-teach/" target="_blank" rel="noopener noreferrer">topics-you-can-hire-me-to-teach</a></h3>
+      <p>The page is a teaching catalog and inquiry form for one topic, Future Hermeneutics, with three listed formats: Talk, 60–90 minutes; Seminar, 2–3 hours; and Workshop, half day. It matters because it packages a method for reading the present as history, focusing on AI rhetoric, public belief, and modern blind spots.</p>
+      <div class="meta"><span>updated 2026-06-13</span><span>CSS</span></div>
+      <a class="src" href="https://tinycrops.github.io/topics-you-can-hire-me-to-teach/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/topics-you-can-hire-me-to-teach/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/intel-remortgage/" target="_blank" rel="noopener noreferrer">intel-remortgage</a></h3>
-      <p>Built a scenario calculator that estimates how much wealth you might have had if you remortgaged a house and bought Intel stock, with inputs for house value, remortgage amount, interest rate, buy date, and holding period from 1 to 10 years.</p>
+      <p>An interactive scenario calculator was built to estimate how rich someone would be if they remortgaged a house and bought Intel, using inputs like house value, remortgage amount, interest rate, buy date from 2020 to 2026, and holding periods from 1 to 10 years.</p>
       <div class="meta"><span>updated 2026-06-12</span><span>JavaScript</span></div>
       <a class="src" href="https://tinycrops.github.io/intel-remortgage/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/intel-remortgage/</a>
     </article>
     <article class="card">
-      <h3><a href="https://tinycrops.github.io/articulate/" target="_blank" rel="noopener noreferrer">articulate</a></h3>
-      <p>It’s a tool that turns a recorded thought into a finished, captioned, vertical essay, assembling narration, captions, slides, and cuts from the user’s speech. It matters because it removes editing friction and helps careful thinkers get ideas to the right audience.</p>
-      <div class="meta"><span>updated 2026-06-12</span><span>HTML</span></div>
-      <a class="src" href="https://tinycrops.github.io/articulate/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/articulate/</a>
-    </article>
-    <article class="card">
       <h3><a href="https://tinycrops.github.io/tribe-brain-qa/" target="_blank" rel="noopener noreferrer">tribe-brain-qa</a></h3>
-      <p>The page presents a TRIBE v2 brain explorer that measured predicted fMRI cortical responses for 8 video clips under two conditions: video-only and 3-modality video, audio, and text, across 20,484 surface vertices organized by the Destrieux atlas.</p>
+      <p>A brain explorer was built for TRIBE v2 inference results on 8 video clips, comparing video-only and 3-modality inputs and predicting fMRI activation across 20,484 cortical surface vertices by Destrieux region.</p>
       <div class="meta"><span>updated 2026-06-12</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/tribe-brain-qa/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/tribe-brain-qa/</a>
     </article>
     <article class="card">
-      <h3><a href="https://tinycrops.github.io/cybersecrets-brain-report/" target="_blank" rel="noopener noreferrer">cybersecrets-brain-report</a></h3>
-      <p>A report analyzed 99 TikToks with Meta FAIR’s TRIBE v2 brain-response model, comparing predicted per-second brain activity with real audience retention.</p>
-      <div class="meta"><span>updated 2026-06-10</span><span>HTML</span></div>
-      <a class="src" href="https://tinycrops.github.io/cybersecrets-brain-report/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/cybersecrets-brain-report/</a>
-    </article>
-    <article class="card">
-      <h3><a href="https://tinycrops.github.io/tribe-gallery/" target="_blank" rel="noopener noreferrer">tribe-gallery</a></h3>
-      <p>Built an interactive TRIBE v2 Brain Response Gallery that predicts fMRI cortical activation for the first 15 seconds of each video using V-JEPA2, Wav2Vec-BERT, and LLaMA 3.2 across 20,484 fsaverage5 cortical vertices.</p>
-      <div class="meta"><span>updated 2026-06-10</span><span>HTML</span></div>
-      <a class="src" href="https://tinycrops.github.io/tribe-gallery/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/tribe-gallery/</a>
-    </article>
-    <article class="card">
       <h3><a href="https://tinycrops.github.io/launchspec/" target="_blank" rel="noopener noreferrer">launchspec</a></h3>
-      <p>Built a compute router that turns a workload spec into launch recommendations across serverless, cloud, marketplace, and bare-metal providers, with options like 1, 2, 4, or 8 GPUs, 20% memory headroom, and models from under 8B to 120B+.</p>
+      <p>A prototype compute router was built to specify jobs and compare live prices across serverless, cloud, marketplace, and bare-metal providers, using workload settings like model size, precision, GPU count, and runtime.</p>
       <div class="meta"><span>updated 2026-06-09</span><span>Python</span></div>
       <a class="src" href="https://tinycrops.github.io/launchspec/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/launchspec/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/cofounder-frontend-pages/" target="_blank" rel="noopener noreferrer">cofounder-frontend-pages</a></h3>
-      <p>A research microsite distilled two 2026 Princeton papers, prior TinyCrops artifacts, and a browser prototype into a “domain-specific superintelligence” thesis about compact, auditable AI artifacts.</p>
+      <p>The page is a research microsite indexing TinyCrops’ thesis and evidence around domain-specific superintelligence, summarizing two Princeton 2026 papers plus prototype artifacts like Fontemon, llama.ttf, and parameter-golf.</p>
       <div class="meta"><span>updated 2026-03-23</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/cofounder-frontend-pages/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/cofounder-frontend-pages/</a>
     </article>
     <article class="card">
-      <h3><a href="https://tinycrops.github.io/gemini-manifold-book/" target="_blank" rel="noopener noreferrer">gemini-manifold-book</a></h3>
-      <p>The project built a public measurement book for Gemini’s multimodal embeddings, testing Saint Basil’s Cathedral as six objects: ASCII text, rasterized ASCII image, image+text, photo, photo+text, and photo+ascii-image in a 3072-dimensional space.</p>
-      <div class="meta"><span>updated 2026-03-18</span><span>HTML</span></div>
-      <a class="src" href="https://tinycrops.github.io/gemini-manifold-book/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/gemini-manifold-book/</a>
-    </article>
-    <article class="card">
       <h3><a href="https://tinycrops.github.io/polsia-hub/" target="_blank" rel="noopener noreferrer">polsia-hub</a></h3>
-      <p>A static LAN dashboard was built from an analysis SQLite database to track every polsia.app company site and URL observed, including site inventory, host surface, and link observations.</p>
+      <p>Built a static LAN dashboard from analysis/analysis.sqlite3 to inventory polsia.app sites and URLs, with 6,018 company sites, 6,770 unique URLs, 282,720 company observation rows, and 565,440 link observation rows.</p>
       <div class="meta"><span>updated 2026-03-18</span><span>Python</span></div>
       <a class="src" href="https://tinycrops.github.io/polsia-hub/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/polsia-hub/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/operator-proof-pilot-pages/" target="_blank" rel="noopener noreferrer">operator-proof-pilot-pages</a></h3>
-      <p>It is a redirect page that sends visitors to the Agentic Business Development Council. This matters because it provides the destination for the published-work index, but no measurements or project results are shown on the page.</p>
+      <p>A page was built as an index for someone’s published work, but the page content only shows a redirect notice. It redirects to Agentic Business Development Council, so the result is that the intended index page is not directly available at this URL.</p>
       <div class="meta"><span>updated 2026-03-17</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/operator-proof-pilot-pages/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/operator-proof-pilot-pages/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/face-probe/" target="_blank" rel="noopener noreferrer">face-probe</a></h3>
-      <p>A project page presents a published work index entry for a tool that reads three faces with GPT, covering emotion, voice, and ASCII. It matters because it shows a multimodal face-analysis project distilled into a simple demo with three distinct outputs.</p>
+      <p>A project page indexed three faces analyzed by GPT for emotion, voice, and ASCII output. It matters because it turns face-reading into a compact, published demo of multimodal interpretation with 3 face reads.</p>
       <div class="meta"><span>updated 2026-03-16</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/face-probe/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/face-probe/</a>
     </article>
     <article class="card">
-      <h3><a href="https://tinycrops.github.io/fish-farm-discovery-road/" target="_blank" rel="noopener noreferrer">fish-farm-discovery-road</a></h3>
-      <p>Built a static shortlist of 26 Western New York land candidates across 8 counties, scored from 45+ using water distance, road distance, slope, floodplain, and wetland balance, with a 2026-03-09 snapshot.</p>
-      <div class="meta"><span>updated 2026-03-09</span><span>HTML</span></div>
-      <a class="src" href="https://tinycrops.github.io/fish-farm-discovery-road/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/fish-farm-discovery-road/</a>
-    </article>
-    <article class="card">
       <h3><a href="https://tinycrops.github.io/x402-canary-frontend/" target="_blank" rel="noopener noreferrer">x402-canary-frontend</a></h3>
-      <p>A public x402 Agent Marketplace dashboard was built to test paid agent calls and on-chain settlement on Base mainnet, with endpoints for health, transactions, balances, traffic sources, and four paid tools.</p>
+      <p>Built a public x402 agent marketplace and commerce dashboard on Base mainnet, with agent-first UX, traceable payments, ecosystem leaderboard, and endpoints for health, transactions, balances, traffic, weather, summarization, market snapshot, recommendations, and alerts.</p>
       <div class="meta"><span>updated 2026-02-25</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/x402-canary-frontend/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/x402-canary-frontend/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/x402-signal-studio/" target="_blank" rel="noopener noreferrer">x402-signal-studio</a></h3>
-      <p>A live dashboard was built to discover paid APIs, monitor market pulse, search a service bazaar, and save strategy notes, with an email fallback if the API is down.</p>
+      <p>A live dashboard was built to discover paid APIs, monitor market pulse, and capture deploy-ready notes, combining service discovery, search, strategy notes, and a save-note tool with an email fallback when the API is down.</p>
       <div class="meta"><span>updated 2026-02-25</span><span>JavaScript</span></div>
       <a class="src" href="https://tinycrops.github.io/x402-signal-studio/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/x402-signal-studio/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/market-studio/" target="_blank" rel="noopener noreferrer">market-studio</a></h3>
-      <p>A web app was built to submit ingestion jobs for a market-studio index, supporting single URL pages, profile URLs, and video URL lists with fields for max videos, max per page, and max total.</p>
+      <p>A web app called market-studio was built to submit ingestion jobs for single URL pages or profile/video URL lists, with settings for max videos, max per page, and max total, plus queue and library views.</p>
       <div class="meta"><span>updated 2026-02-19</span><span>Python</span></div>
       <a class="src" href="https://tinycrops.github.io/market-studio/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/market-studio/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/pain-to-page/" target="_blank" rel="noopener noreferrer">pain-to-page</a></h3>
-      <p>It’s a beta waitlist product that turns social posts from TikTok, X, YouTube Shorts, and Facebook into a pain-point brief and landing page draft in 10 minutes. It targets fast offer testing and says there are 20 beta spots, making customer-language copy easier to validate before building.</p>
+      <p>It is a beta tool that turns TikTok, X, YouTube Shorts, and Facebook posts into a pain-point brief and landing page draft in 10 minutes. It matters because it helps solo agencies and small SaaS teams validate offers faster, with 20 beta spots and no credit card required.</p>
       <div class="meta"><span>updated 2026-02-19</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/pain-to-page/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/pain-to-page/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/pain-to-page-frontend/" target="_blank" rel="noopener noreferrer">pain-to-page-frontend</a></h3>
-      <p>A beta waitlist landing page was built for a tool that turns 5 to 20 social links into a pain-point brief and editable sales-page draft in under 10 minutes. It promises to help solo agencies, consultants, and small SaaS teams test positioning faster, with 20 beta spots offered and no backend yet.</p>
+      <p>A beta waitlist project turns 5 to 20 social links into a pain-point brief and landing page draft in under 10 minutes, using real customer language for TikTok-first offer testing.</p>
       <div class="meta"><span>updated 2026-02-18</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/pain-to-page-frontend/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/pain-to-page-frontend/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/poe-memory-market-onboarding-site/" target="_blank" rel="noopener noreferrer">poe-memory-market-onboarding-site</a></h3>
-      <p>The project built a Path of Exile “Memory+Market” onboarding page that measures build intelligence by collecting an account name and realm, then selecting a character from a newest-first list.</p>
+      <p>It built a Path of Exile character-first onboarding flow for Build Intelligence, with Step 1 collecting account and realm and Step 2 choosing a character from a newest-first list.</p>
       <div class="meta"><span>updated 2026-02-18</span><span>CSS</span></div>
       <a class="src" href="https://tinycrops.github.io/poe-memory-market-onboarding-site/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/poe-memory-market-onboarding-site/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/agibox/" target="_blank" rel="noopener noreferrer">agibox</a></h3>
-      <p>The page builds a costed comparison of workstation configurations using Xeon 8558 or 8468H CPUs, RTX 6000 Ada or RTX A6000 GPUs, and 256 GB ECC RAM, with sample totals of $15,281, $17,240, and $65,714.</p>
+      <p>The page compares three high-performance workstation builds using Xeon 8558 or 8468H CPUs, RTX 6000 Ada or RTX A6000 GPUs, and up to 256 GB ECC RAM, with sample totals from $15,281 to $65,714.</p>
       <div class="meta"><span>updated 2025-06-26</span><span>HTML</span></div>
       <a class="src" href="https://tinycrops.github.io/agibox/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/agibox/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/blog/" target="_blank" rel="noopener noreferrer">blog</a></h3>
-      <p>An index-style blog page was built for Matthew’s published writing, with navigation, search, and a project layout section. It matters because it organizes the site into a MkDocs-backed documentation structure, making the content easier to browse and maintain.</p>
+      <p>A blog site was built with MkDocs for Matthew’s published writing, including navigation, search, and a project layout page. It matters because it presents his work in an indexed, searchable form, though the page itself gives no publication counts or performance metrics.</p>
       <div class="meta"><span>updated 2024-01-14</span><span>JavaScript</span></div>
       <a class="src" href="https://tinycrops.github.io/blog/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/blog/</a>
     </article>
     <article class="card">
       <h3><a href="https://tinycrops.github.io/MeDott29.github.io/" target="_blank" rel="noopener noreferrer">MeDott29.github.io</a></h3>
-      <p>A simple project page was built for an index of published work on the MeDott29.github.io site. It currently shows only the site name twice, so there is no substantive content yet, which means the page functions more as a placeholder than a usable portfolio.</p>
+      <p>A GitHub Pages site was built as an index for MeDott29’s published work. It provides a simple landing page for discovering the author’s output, though the page content shown here contains no additional details about the works themselves.</p>
       <div class="meta"><span>updated 2024-01-14</span></div>
       <a class="src" href="https://tinycrops.github.io/MeDott29.github.io/" target="_blank" rel="noopener noreferrer">tinycrops.github.io/MeDott29.github.io/</a>
     </article></div>
