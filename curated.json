@@ -1,0 +1,51 @@
+{
+  "profile": {
+    "name": "tinycrops",
+    "tagline": "self-directed research on machines that model themselves — and can show it to someone else",
+    "blurb": "Two years of unpaid, self-directed work on one question, run on a five-machine cluster of secondhand hardware. Local model serving, embedding stores, ASR and voice, and measured experiments — including the ones that failed. Everything below is public and reproducible.",
+    "links": [
+      {"label": "github.com/tinycrops", "url": "https://github.com/tinycrops"}
+    ]
+  },
+  "selected": [
+    {
+      "repo": "awakened-poe-trade",
+      "title": "Mercenary Warrant price-check — upstream feature",
+      "url": "https://github.com/tinycrops/awakened-poe-trade",
+      "tag": "open source",
+      "note": "Built a price-check path for a new item class in a trading tool with a large user base, ported from an upstream issue and verified end to end against live trade data.",
+      "language": "TypeScript"
+    },
+    {
+      "repo": "ascii-realness-story",
+      "title": "The Realness Ladder",
+      "tag": "research",
+      "note": "Measured whether ASCII art, rasterized and passed through img2img, moves monotonically toward photographic 'realness' in a shared embedding space. It does, across a nine-subject corpus, and identity survives the whole ladder."
+    },
+    {
+      "repo": "geometry-as-judge",
+      "title": "Geometry as Judge",
+      "tag": "research",
+      "note": "Asks whether the geometry of an embedding space can stand in for a human rater. Includes the negative results — where the geometry disagrees with people, and why that matters more than where it agrees."
+    },
+    {
+      "repo": "okf-commons",
+      "title": "OKF Commons — compressed research memory",
+      "tag": "systems",
+      "note": "Turns years of saved browser tabs into a queryable knowledge base with bidirectional provenance, so every claim traces back to the source that produced it."
+    },
+    {
+      "repo": "arc-jgs2",
+      "title": "ARC orientation workbench",
+      "url": "https://github.com/tinycrops/arc-jgs2",
+      "tag": "research",
+      "note": "A corpus-level workbench for ARC-AGI built on one primitive — nuisance, group action, harmonic invariants. Retrieval accuracy went from 28% to 46% under that framing."
+    },
+    {
+      "repo": "topics-you-can-hire-me-to-teach",
+      "title": "Topics you can hire me to teach",
+      "tag": "available",
+      "note": "What I can be hired to explain, and to whom."
+    }
+  ]
+}
